@@ -29,12 +29,6 @@ public class UserResponseDto {
     private String fullName;
 
     @Schema(
-        description = "Должность пользователя",
-        example = "Team leader"
-    )
-    private String jobTitle;
-
-    @Schema(
         description = "id аватара пользователя",
         example = "1"
     )
@@ -57,11 +51,5 @@ public class UserResponseDto {
         example = "USER"
     )
     private String role;
-
-    @Schema(
-        description = "Избранный пользователь",
-        example = "true"
-    )
-    private boolean isFavorite;
 
 }

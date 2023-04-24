@@ -17,11 +17,7 @@ public class Chat  {
     private String name;
 
     @ManyToOne()
-    @JoinColumn(name = "chat_id")
+    @JoinColumn(name = "type_id")
     private ChatType chatType;
-
-    @ManyToOne
-    @JoinColumn(name = "folder_id")
-    private Folder folder;
 
 }

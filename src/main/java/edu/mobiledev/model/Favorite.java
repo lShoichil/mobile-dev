@@ -20,7 +20,7 @@ public class Favorite {
     private User user;
 
     @ManyToOne
-    @JoinColumn(name = "favorite_user_id")
-    private User favoriteUser;
+    @JoinColumn(name = "favorite_chat_id")
+    private Chat favoriteChat;
 
 }

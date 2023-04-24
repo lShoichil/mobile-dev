@@ -25,7 +25,6 @@ public class UserMapper implements Mapper {
                     .phone(user.getPhone())
                     .email(user.getEmail())
                     .role(user.getRole().getName())
-                    .isFavorite(false)
                     .build();
             });
 
