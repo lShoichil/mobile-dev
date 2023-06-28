@@ -8,7 +8,7 @@ CREATE TABLE workflow."user"
     phone     VARCHAR(255),
     email     VARCHAR(255),
     role_id   BIGINT,
-    deleted   BOOLEAN NOT NULL DEFAULT FALSE,
+    deleted   BOOLEAN,
     CONSTRAINT pk_user PRIMARY KEY (id)
 );
 

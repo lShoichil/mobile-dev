@@ -26,10 +26,7 @@ public class UserController {
 
     private final ModelMapper modelMapper;
 
-    @Operation(
-        summary = "Получить пользователя",
-        description = "Получение информации о пользователе по его id"
-    )
+    @Operation(summary = "Получить пользователя")
     @ResponseStatus(HttpStatus.OK)
     @GetMapping("/{userId}")
     public UserResponseDto getUserById(@Valid @PathVariable Long userId) {
